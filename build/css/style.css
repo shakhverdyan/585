@@ -445,7 +445,7 @@ template {
 }
 .header__location::before {
   content: "";
-  background-image: url(../../images/location.svg);
+  background-image: url(./../images/location.svg);
   background-repeat: no-repeat;
   background-position: center;
   width: 2.9375rem;
@@ -490,7 +490,7 @@ template {
 }
 .header__phone::before {
   content: "";
-  background-image: url(../../images/smartphone.svg);
+  background-image: url(./../images/smartphone.svg);
   background-repeat: no-repeat;
   background-position: center;
   width: 3.5rem;
@@ -513,7 +513,7 @@ template {
 
 .banner {
   margin-bottom: 3.0625rem;
-  background: url("../../images/bg@1x.jpg"), url("../../images/bg@1x.webp");
+  background: url("./../images/bg@1x.jpg"), url("./../images/bg@1x.webp");
   background-repeat: no-repeat, no-repeat;
   background-size: cover;
   background-position: center, center;
@@ -533,7 +533,7 @@ template {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx), (min-width: 1900px) {
   .banner {
-    background: url("../../images/bg@2x.jpg"), url("../../images/bg@2x.webp");
+    background: url("./../images/bg@2x.jpg"), url("./../images/bg@2x.webp");
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
     background-size: cover;
@@ -570,7 +570,7 @@ template {
 }
 .banner__title:before {
   content: "";
-  background-image: url(../../images/Subtract.svg);
+  background-image: url(./../images/Subtract.svg);
   width: 32.5rem;
   background-repeat: no-repeat;
   height: 30.25rem;
