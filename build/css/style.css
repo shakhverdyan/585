@@ -956,12 +956,13 @@ template {
   inset: 0;
   width: 100%;
   height: 100%;
+  overflow-y: scroll;
 }
 
 .popup {
   background: #FFE3E5;
   border-radius: 3.75rem;
-  max-width: 700px;
+  max-width: 43.75rem;
   width: 100%;
   position: absolute;
   top: 50%;
@@ -970,6 +971,27 @@ template {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  padding: 0 0.4375rem;
+}
+@media (max-width: 992px) {
+  .popup {
+    max-width: 36.875rem;
+  }
+}
+@media (max-width: 768px) {
+  .popup {
+    max-width: 27.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .popup {
+    max-width: 21.875rem;
+  }
+}
+@media (max-width: 394px) {
+  .popup {
+    max-width: 19.25rem;
+  }
 }
 .popup h3 {
   font-family: "Circe-Bold", "Arial", sans-serif;
@@ -983,6 +1005,25 @@ template {
   line-height: 4.0625rem;
   color: #BC1A1D;
 }
+@media (max-width: 768px) {
+  .popup h3 {
+    font-size: 2.75rem;
+    line-height: 2.9375rem;
+  }
+}
+@media (max-width: 576px) {
+  .popup h3 {
+    font-size: 2.0625rem;
+    line-height: 2.375rem;
+  }
+}
+@media (max-width: 394px) {
+  .popup h3 {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    padding: 5.625rem 0 0.9375rem;
+  }
+}
 .popup p {
   font-family: "Circe-Regular", "Arial", sans-serif;
   max-width: 31.25rem;
@@ -991,6 +1032,25 @@ template {
   font-size: 2.25rem;
   line-height: 2.8125rem;
   color: #000000;
+}
+@media (max-width: 768px) {
+  .popup p {
+    font-size: 1.75rem;
+    line-height: 2.125rem;
+  }
+}
+@media (max-width: 576px) {
+  .popup p {
+    font-size: 1.4375rem;
+    line-height: 1.75rem;
+  }
+}
+@media (max-width: 394px) {
+  .popup p {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    margin: 0 auto 2.1875rem;
+  }
 }
 .popup__btn {
   color: #fff;
@@ -1003,6 +1063,16 @@ template {
   display: block;
   width: 100%;
   margin: 0 auto 2.5rem;
+}
+@media (max-width: 576px) {
+  .popup__btn {
+    max-width: 16.875rem;
+  }
+}
+@media (max-width: 394px) {
+  .popup__btn {
+    max-width: 12.5rem;
+  }
 }
 .popup .close {
   position: absolute;
