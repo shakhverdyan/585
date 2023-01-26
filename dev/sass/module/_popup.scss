@@ -1,0 +1,66 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+.popup {
+  background: #FFE3E5;
+  border-radius: size(60px);
+  max-width: 700px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 99;
+  transform: translate(-50%, -50%);
+
+  h3 {
+    font-family: "Circe-Bold", 'Arial', sans-serif;
+    max-width: size(500px);
+    margin: 0 auto;
+    text-align: center;
+    padding: size(50px) 0 size(25px);
+    letter-spacing: -1px;
+    font-weight: 700;
+    font-size: $text-size55;
+    line-height: size(65px);
+    color: #BC1A1D;
+  }
+
+  p {
+    font-family: "Circe-Regular", 'Arial', sans-serif;
+    max-width: size(500px);
+    margin: 0 auto size(50px);
+    text-align: center;
+    font-size: $text-size36;
+    line-height: size(45px);
+
+    color: $main-text-color;
+  }
+
+  // .popup__btn
+
+  &__btn {
+    color: $white-text-color;
+    font-family: 'Arial', sans-serif;
+    font-size: $text-size20;
+    line-height: size(26px);
+    background: $btn-link-color;
+    padding: size(21px) size(10px);
+    max-width: size(330px);
+    display: block;
+    width: 100%;
+    margin: 0 auto size(40px);
+  }
+
+  .close {
+    position: absolute;
+    right: size(29px);
+    top: size(23px);
+  }
+
+
+}

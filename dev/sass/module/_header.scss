@@ -31,7 +31,7 @@
 
     &::before {
       content: '';
-      background-image: url(../../images/location.svg);
+      background-image: url(./../images/location.svg);
       background-repeat: no-repeat;
       background-position: center;
       width: size(47px);
@@ -76,7 +76,7 @@
 
     &::before {
       content: '';
-      background-image: url(../../images/smartphone.svg);
+      background-image: url(./../images/smartphone.svg);
       background-repeat: no-repeat;
       background-position: center;
       width: size(56px);

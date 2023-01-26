@@ -12,14 +12,14 @@
   //     url('../../images/bg@2x.webp') 2x,
   //   );
 
-  background: url('../../images/bg@1x.jpg'), url('../../images/bg@1x.webp');
+  background: url('./../images/bg@1x.jpg'), url('./../images/bg@1x.webp');
   background-repeat: no-repeat, no-repeat;
   background-size: cover;
   background-position: center, center;
 
   @media(min-resolution:2dppx),
   (min-width: 1900px) {
-    background: url('../../images/bg@2x.jpg'), url('../../images/bg@2x.webp');
+    background: url('./../images/bg@2x.jpg'), url('./../images/bg@2x.webp');
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
     background-size: cover;
@@ -63,7 +63,7 @@
 
     &:before {
       content: '';
-      background-image: url(../../images/Subtract.svg);
+      background-image: url(./../images/Subtract.svg);
       width: size(520px);
       background-repeat: no-repeat;
       height: size(484px);
