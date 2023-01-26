@@ -1,0 +1,99 @@
+@import 'variables';
+
+.header {
+
+  // .header__wrap
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: size(31px) 0;
+
+    @include breakpoint(lg) {
+      flex-wrap: wrap;
+    }
+  }
+
+  // .header__location
+
+  &__location {
+    font-size: $text-size30;
+    line-height: size(44px);
+    display: flex;
+    align-items: center;
+    font-family: 'Circe-Regular', 'Arial', sans-serif;
+
+    @include breakpoint(sm) {
+      font-size: size(20px);
+      line-height: size(26px);
+    }
+
+    &::before {
+      content: '';
+      background-image: url(../../images/location.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: size(47px);
+      height: size(47px);
+      margin-right: size(10px);
+
+      @include breakpoint(sm) {
+        width: size(27px);
+        height: size(27px);
+        background-size: 90%;
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__logo {
+    @include breakpoint(lg) {
+      width: 100%;
+      order: 3;
+      text-align: center;
+      margin-top: size(30px);
+
+
+    }
+  }
+
+  // .header__phone
+
+  &__phone {
+    font-size: $text-size30;
+    line-height: size(44px);
+    display: flex;
+    align-items: center;
+    font-family: 'Circe-Regular', 'Arial', sans-serif;
+    white-space: nowrap;
+
+    @include breakpoint(sm) {
+      font-size: size(20px);
+      line-height: size(26px);
+    }
+
+
+    &::before {
+      content: '';
+      background-image: url(../../images/smartphone.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: size(56px);
+      height: size(56px);
+
+      @include breakpoint(sm) {
+        width: size(28px);
+        height: size(28px);
+        background-size: 90%;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.logo {
+  font-size: $text-size30;
+  line-height: size(44px);
+  font-family: 'Circe-Regular', 'Arial', sans-serif;
+}

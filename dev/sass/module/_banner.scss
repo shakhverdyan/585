@@ -1,0 +1,88 @@
+.banner {
+  margin-bottom: size(49px);
+  // background-image: -webkit-image-set(url('../../images/bg@2x.jpg') 1x,
+  //     url('../../images/bg@2x.jpg') 2x,
+  //     url('../../images/bg@1x.webp') 1x,
+  //     url('../../images/bg@2x.webp') 2x,
+  //   );
+
+  // background-image: image-set(url('../../images/bg@1x.jpg') 1x,
+  //     url('../../images/bg@2x.jpg') 2x,
+  //     url('../../images/bg@1x.webp') 1x,
+  //     url('../../images/bg@2x.webp') 2x,
+  //   );
+
+  background: url('../../images/bg@1x.jpg'), url('../../images/bg@1x.webp');
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover;
+  background-position: center, center;
+
+  @media(min-resolution:2dppx),
+  (min-width: 1900px) {
+    background: url('../../images/bg@2x.jpg'), url('../../images/bg@2x.webp');
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-size: cover;
+  }
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: size(720px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center center;
+
+  @include breakpoint(sm) {
+    min-height: auto;
+    padding: size(50px) 0;
+  }
+
+
+  &__title {
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: $text-size84;
+    line-height: size(100px);
+    max-width: size(517px);
+    text-align: center;
+    color: $title-text-color;
+    position: relative;
+    font-family: 'Circe-Bold', 'Arial', sans-serif;
+
+    @include breakpoint(sm) {
+      font-size: size(63px);
+      line-height: size(68px);
+    }
+
+    @include breakpoint(ssm) {
+      font-size: size(45px);
+      line-height: size(48px);
+    }
+
+    &:before {
+      content: '';
+      background-image: url(../../images/Subtract.svg);
+      width: size(520px);
+      background-repeat: no-repeat;
+      height: size(484px);
+      background-position: center;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-size: contain;
+
+      @include breakpoint(sm) {
+        width: size(360px);
+      }
+
+      @include breakpoint(ssm) {
+
+        width: size(246px);
+      }
+    }
+  }
+}

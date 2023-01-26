@@ -1,0 +1,220 @@
+.goods {
+  font-family: 'Arial', sans-serif;
+  // .goods__tab
+
+  &__tab {
+    max-width: size(254px);
+    width: 100%;
+    height: size(99px);
+    font-size: $text-size50;
+    line-height: size(75px);
+    transition: all .5s;
+    font-family: 'Circe-Regular', 'Arial', sans-serif;
+    color: $nav-link-color;
+
+    @include breakpoint(md) {
+      max-width: size(190px);
+      height: size(76px);
+      font-size: size(35px);
+      line-height: size(45px);
+    }
+
+    @include breakpoint(sm) {
+      max-width: size(150px);
+      height: size(62px);
+      font-size: size(26px);
+      line-height: size(36px);
+    }
+
+    @include breakpoint(sm) {
+      max-width: size(110px);
+      height: size(55px);
+      font-size: size(22px);
+      line-height: size(32px);
+    }
+
+    &-active {
+      background-color: $pink-bg;
+      font-weight: 700;
+    }
+  }
+
+  &__tabs {
+    display: flex;
+    justify-content: space-between;
+    max-width: size(989px);
+    margin: 0 auto size(82px);
+    font-weight: 400;
+
+
+    @include breakpoint(md) {
+      margin: 0 auto size(52px);
+    }
+  }
+
+  // .goods__title
+
+  &__title {
+    font-family: 'Circe-Bold', 'Arial', sans-serif;
+    font-weight: 700;
+    font-size: $text-size54 ;
+    line-height: size(80px);
+    text-align: center;
+    margin-bottom: size(82px);
+
+    @include breakpoint(md) {
+      font-size: size(36px);
+      line-height: size(46px);
+      margin-bottom: size(52px);
+    }
+
+    @include breakpoint(ssm) {
+      font-size: size(32px);
+      line-height: size(42px);
+      margin-bottom: size(52px);
+    }
+  }
+
+
+}
+
+
+
+.grid {
+
+  // .grig__list
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 380px));
+    column-gap: size(27px);
+    row-gap: size(90px);
+    justify-content: center;
+    grid-template-rows: auto;
+
+    @include breakpoint(md) {
+      column-gap: size(20px);
+      row-gap: size(40px);
+      grid-template-columns: repeat(2, minmax(250px, 380px));
+    }
+
+    @include breakpoint(sm) {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 380px));
+    }
+
+  }
+
+  // .grid__item
+
+  &__item {
+    min-height: size(634px);
+
+    &-btn {
+      color: $btn-link-color;
+      font-family: 'Arial', sans-serif;
+      font-weight: 700;
+      font-size: $text-size20;
+      line-height: size(26px);
+      padding: size(21px) size(32px);
+      border: 1.31034px solid $btn-link-color;
+      border-radius: size(5px);
+    }
+  }
+
+  // .grid__img
+
+  &__img {
+    background-color: $pink-bg;
+    padding: size(15px);
+    position: relative;
+    margin-bottom: size(41px);
+
+    img {}
+  }
+
+  // .grid__title
+
+  &__title {
+    font-weight: 700;
+    font-size: $text-size26;
+    line-height: size(26px);
+
+    margin-bottom: size(9px);
+  }
+
+  // .grid__sub
+
+  &__sub-title {
+    font-weight: 400;
+    font-size: $main-text-size;
+    line-height: size(22px);
+    margin-bottom: size(13px);
+    display: block;
+    color: $light-text-dark-color;
+  }
+
+  // .grid__price
+
+  &__price {
+    display: flex;
+    align-items: center;
+    margin-bottom: size(64px);
+  }
+
+  // .grid__curent
+
+  &__curent-price {
+    font-weight: 700;
+    font-size: $text-size36;
+    line-height: size(42px);
+    margin-right: size(15px);
+  }
+
+  // .grid__last
+
+  &__last-price {
+    text-decoration-line: line-through;
+    font-weight: 700;
+    font-size: $text-size20;
+    line-height: size(24px);
+    color: $grey-text-color;
+  }
+
+  &__picture {
+    display: block;
+    text-align: center;
+  }
+}
+
+.Curency {
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.sale {
+  position: relative;
+
+
+  .icon {
+    max-width: size(129px);
+    height: size(57px);
+    // position: absolute;
+    // right: 0;
+    margin-left: auto;
+    display: block;
+  }
+
+  span {
+    letter-spacing: size(2px);
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: $text-size24;
+    line-height: size(27px);
+    position: absolute;
+    top: 14px;
+    right: 28px;
+  }
+}
+
+.hide {
+  display: none;
+}
